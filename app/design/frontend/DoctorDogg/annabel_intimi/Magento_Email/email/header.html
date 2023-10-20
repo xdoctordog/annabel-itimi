@@ -1,0 +1,45 @@
+
+<!--@subject {{trans "Header"}} @-->
+<!--@vars {
+"var logo_url":"Email Logo Image URL",
+"var logo_alt":"Email Logo Alt Text",
+"var logo_height":"Email Logo Image Height",
+"var logo_width":"Email Logo Image Width",
+"var template_styles|raw":"Template CSS"
+} @-->
+
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        {{var template_styles|raw}}
+
+        {{css file="css/email.css"}}
+    </style>
+</head>
+<body id="annabel-intimi-email-template-body-content" >
+{{inlinecss file="css/email-inline.css"}}
+
+<!-- [START] DoctorDogg/annabel_intimi/Magento_Email/email/header.html -->
+
+<!-- Begin wrapper table -->
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+    <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+            <div class="content">
+                <!-- START CENTERED WHITE CONTAINER -->
+                <table role="presentation" class="main">
+                    <tr class="mainHeader">
+                        <td class="clip-path" width="35%">
+                            <a href="https://annabel-intimi.by">
+                                <img src="{{view url='DoctorDogg_OrderPlaceEmailTemplate/images/logo-white.png'}}" height="50" width="70%" alt="{{trans 'Annabel Intimi'}}" />
+                            </a>
+                        </td>
+                        <td class="align-center" width="65%">
+                        </td>
+                    </tr>
+                </table>
+<!-- [END] DoctorDogg/annabel_intimi/Magento_Email/email/header.html -->
